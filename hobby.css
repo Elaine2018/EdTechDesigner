@@ -1,0 +1,118 @@
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  top:0;
+  position:fixed;
+  width:100%;
+}
+
+.navli {
+  float: left;
+}
+
+.navli a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navli a:hover {
+  background-color: #111;
+}
+
+a:visited{
+  color:orange;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  top:52px;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.videocontent {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+.hobbyBG{
+  overflow:scroll;
+}
+
+
+.wrapper {
+  position: fixed;
+  top: 52px;
+  left:90px;
+  display: none;
+  z-index: 100;
+}
+
+.wrapper.active {
+  display: block;
+  position: fixed;
+  animation: show 2s forwards;
+}
+
+.photoshow{
+  width:1200px;
+  height:640px;
+  overflow:hidden;
+}
+
+.wrapper .photoshow {
+  display: none;
+  position: absolute;
+}
+
+.wrapper .photoshow.active {
+  display: block;
+  position: absolute;
+  z-index: 100;
+}
+
+.close{
+  position:fixed;
+  height:30px;
+  width:30px;
+  background-image:url('https://image.flaticon.com/icons/png/128/52/52084.png');
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  top:60px;
+  left:20px;
+}
