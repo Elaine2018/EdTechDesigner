@@ -1,11 +1,13 @@
 var wrapperEl =document.querySelector('.wrapper')
 var photoShow = document.querySelector('.photoshow');
 
+var contentEl;
 function show (box, content) {
   box.addEventListener('click', function() {
   for(var i = 0; i < photoShow.length; i++) {
     clearActive(photoShow[i])
   }
+    contentEl=content;
     wrapperEl.classList.add('active');
       content.classList.add('active');
   })
@@ -36,7 +38,7 @@ var close = document.querySelector('.close')
 close.addEventListener('click',
     function(e) {
          wrapperEl.classList.remove('active');
-         content.classList.remove('active');
+         contentEl.classList.remove('active');
     }
 )
 
