@@ -224,6 +224,7 @@ a:visited{
   border: 1px orange solid;
   border-radius: 30px;
   width:32%;
+  text-align:left;
 }
 
 
@@ -278,7 +279,7 @@ i{
     background-image: url("Images/woman boss11_Fotor.png");
 
     /* Set a specific height */
-    min-height: 570px;
+    min-height: 550px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -289,13 +290,13 @@ i{
 
 #startup{
   background-image: url(Images/startup2.jpg);
-  opacity:50;
+  opacity:30;
 }
 
 #consulting1{
   background-image: url(Images/ey_logo9.jpg);
   background-size:cover;
-  opacity:60;
+  opacity:50;
   color:white;
 }
 
@@ -306,8 +307,15 @@ i{
   color:white;
 }
 
+#management{
+  background-image:url(Images/gad4.jpg);
+  background-size:cover;
+  opacity:70;
+  color:black;
+}
+
 .textbox-experience{
-  width:500px;
+  width:680px;
   height:410px;
   text-overflow:ellipsis;
 }
